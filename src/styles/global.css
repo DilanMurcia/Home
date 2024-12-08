@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Labrada:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 1px #000; /* Contorno negro */
+    text-stroke: 1px #000; /* Contorno negro */
+  }
+}
+
+@layer base {
+  /* Aplica la fuente Labrada a todo el cuerpo */
+  body {
+    font-family: "Labrada", sans-serif;
+  }
+
+  /* Aplica la fuente a los encabezados */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Labrada", sans-serif;
+  }
+
+  /* Aplica la fuente a los enlaces */
+  a {
+    font-family: "Labrada", sans-serif;
+  }
+}

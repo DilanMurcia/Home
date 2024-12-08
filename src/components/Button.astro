@@ -1,0 +1,13 @@
+---
+const { text, type = "submit", onClick } = Astro.props;
+---
+
+<button 
+  type={type} 
+  onclick={onClick} 
+  class="text-center w-[450px] h-[88px] text-[64px] bg-[#648FEC] text-white font-semibold rounded-md hover:bg-[#648FEC] focus:outline-none focus:ring-2 focus:ring-[#648FEC]"
+  style="font-family: 'Labrada', sans-serif;"
+>
+  {text}
+</button>
+

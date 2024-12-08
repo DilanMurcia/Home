@@ -1,22 +1,21 @@
+---
+import Header from '../layouts/components/Header.astro';
+import Footer from '../layouts/components/Footer.astro';
+import BaseHead from '../layouts/components/BaseHead.astro';
+
+const { title, description, image } = Astro.props;
+---
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<BaseHead title={title} description={description} image={image} />
 	</head>
-	<body>
-		<slot />
+	<body class="bg-gray-200">
+		<Header/>
+		<div class='py-8 min-h-[calc(100vh-10px)]'>
+			<slot />
+		</div>
+		<Footer/>
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

@@ -1,11 +1,39 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Button from '../components/Button.astro';
 ---
-
 <Layout>
-	<Welcome />
+	<h1 class="text-center text-[80px] font-bold text-stroke">Gestione su información</h1>
+  <!-- Formulario de Login -->
+  <form action="/login" method="POST" class="w-full max-w-4xl mx-auto my-8 p-6 border rounded-md shadow-lg">
+    <div class="mb-4">
+      <label for="username" class="block text-gray-700 font-medium">Usuario</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Ingrese su usuario"
+        required
+        class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
+  
+    <div class="mb-6">
+      <label for="password" class="block text-gray-700 font-medium">Contraseña</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Ingrese su contraseña"
+        required
+        class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
+  
+    <div class="mb-4 flex items-center justify-center">
+      <!-- Usando el componente de botón -->
+      <Button text="Iniciar Sesión" type="submit"  data-action="iniciar-sesion"/>
+    </div>
+  </form>
+  
 </Layout>
