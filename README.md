@@ -1,48 +1,67 @@
-# Astro Starter Kit: Basics
+# 🏡 Home — Panel de gestión con Astro + Express + MongoDB
 
-```sh
-npm create astro@latest -- --template basics
+Este proyecto es una aplicación web **fullstack** creada con **Astro (frontend)** y **Express (backend)**. Permite gestionar usuarios y tareas, integrando autenticación con JWT, validación con Zod, base de datos con Mongoose y estilos modernos con TailwindCSS.
+
+---
+
+## 🚀 Tecnologías principales
+
+- ⚙️ **Astro** `v5.x` (modo middleware)
+- ⚛️ **React** (integrado con Astro)
+- 🖌️ **TailwindCSS**
+- 🧠 **Express.js** para API REST
+- 🔐 **JWT** para autenticación
+- 🧾 **Zod** para validaciones
+- 🛢️ **MongoDB + Mongoose**
+
+---
+
+## 📁 Estructura del proyecto
+
+src/
+├── backend/ # Servidor Express (API REST)
+│ ├── index.mjs # Punto de entrada del backend
+│ ├── app.mjs # Configuración de middlewares y rutas
+│ ├── db.mjs # Conexión a MongoDB
+│ ├── config.mjs # Variables de entorno (puerto, etc.)
+│ ├── routes/ # Rutas de autenticación y tareas
+│ ├── controllers/ # Lógica de autenticación y tareas
+│ ├── models/ # Esquemas de mongoose
+│ ├── schemas/ # Validaciones Zod
+│ └── middlewares/ # Validación y autorización
+├── pages/ # Rutas Astro (frontend)
+│ └── index.astro # Página de login
+├── componentsA/ # Componentes Astro (ej: <Button />)
+├── layouts/ # Layout principal con Header/Footer
+├── styles/ # Archivos globales de estilo
+
+---
+
+## ⚙️ Instalación y ejecución
+
+### 1. Clona el repositorio
+
+```bash
+git clone https://github.com/tu-usuario/home.git
+cd home
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### 2. Instala las dependencias
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+pnpm install
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+### 3. Configurar variables de entorno
 
-## 🧞 Commands
+```bash
+PORT=3000
+MONGO_URI=mongodb://localhost:27017/tu_basedatos
+JWT_SECRET=clave_secreta_super_segura
+```
 
-All commands are run from the root of the project, from a terminal:
+### 4. Ejecutar el proyecto
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+pnpm run dev
+```
