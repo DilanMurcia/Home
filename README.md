@@ -18,24 +18,24 @@ Este proyecto es una aplicación web **fullstack** creada con **Astro (frontend)
 
 ## 📁 Estructura del proyecto
 
+```plaintext
 src/
-├── backend/ # Servidor Express (API REST)
-│ ├── index.mjs # Punto de entrada del backend
-│ ├── app.mjs # Configuración de middlewares y rutas
-│ ├── db.mjs # Conexión a MongoDB
-│ ├── config.mjs # Variables de entorno (puerto, etc.)
-│ ├── routes/ # Rutas de autenticación y tareas
-│ ├── controllers/ # Lógica de autenticación y tareas
-│ ├── models/ # Esquemas de mongoose
-│ ├── schemas/ # Validaciones Zod
-│ └── middlewares/ # Validación y autorización
-├── pages/ # Rutas Astro (frontend)
-│ └── index.astro # Página de login
-├── componentsA/ # Componentes Astro (ej: <Button />)
-├── layouts/ # Layout principal con Header/Footer
-├── styles/ # Archivos globales de estilo
-
----
+├── backend/              # Servidor Express (API REST)
+│   ├── index.mjs         # Punto de entrada del backend
+│   ├── app.mjs           # Configuración de middlewares y rutas
+│   ├── db.mjs            # Conexión a MongoDB
+│   ├── config.mjs        # Variables de entorno (puerto, etc.)
+│   ├── routes/           # Rutas de autenticación y tareas
+│   ├── controllers/      # Lógica de autenticación y tareas
+│   ├── models/           # Esquemas de mongoose
+│   ├── schemas/          # Validaciones Zod
+│   └── middlewares/      # Validación y autorización
+├── pages/                # Rutas Astro (frontend)
+│   └── index.astro       # Página de login
+├── componentsA/          # Componentes Astro (ej: <Button />)
+├── layouts/              # Layout principal con Header/Footer
+├── styles/               # Archivos globales de estilo
+```
 
 ## ⚙️ Instalación y ejecución
 
