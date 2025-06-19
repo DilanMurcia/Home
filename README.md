@@ -65,3 +65,9 @@ JWT_SECRET=clave_secreta_super_segura
 ```bash
 pnpm run dev
 ```
+
+### 5. 👨‍💻 Autor
+
+Dilan Albert Murcia Parra
+
+Proyecto en desarrollo personal. Código abierto para práctica, feedback o colaboración.
