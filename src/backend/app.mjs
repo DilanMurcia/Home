@@ -1,11 +1,10 @@
 import express from "express";
-import { handler as ssrHandler } from '../../dist/server/entry.mjs';
+//import { handler as ssrHandler } from '../../dist/server/entry.mjs';
 import cors from "cors";
 import morgan from "morgan";
 import cookieParser from "cookie-parser";
-import authRoutes from "./routes/auth.routes.mjs";
-import taksRoutes from "./routes/tasks.routes.mjs";
-
+import authRoutes from "./infraestructure/express/routes/auth.routes.mjs";
+import taksRoutes from "./infraestructure/express/routes/tasks.routes.mjs";
 
 const app = express();
 
@@ -28,6 +27,6 @@ if (process.env.NODE_ENV === "production") {
 }
 app.use('/', express.static('dist/client/'));
 
-app.use(ssrHandler);
+//app.use(ssrHandler);
 
 export default app;

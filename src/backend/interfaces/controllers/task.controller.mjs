@@ -1,4 +1,4 @@
-import Task from "../models/task.model.mjs";
+import Task from '../../../backend/infraestructure/db/task.model.mjs';
 
 export const getTasks = async (req, res) => {
   try {

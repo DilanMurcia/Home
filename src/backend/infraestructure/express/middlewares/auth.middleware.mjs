@@ -1,5 +1,8 @@
 import jwt from "jsonwebtoken";
-import { TOKEN_SECRET } from "../config.mjs";
+import { TOKEN_SECRET } from "../../../config.mjs";
+
+
+
 
 export const auth = (req, res, next) => {
   try {
