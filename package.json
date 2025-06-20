@@ -29,5 +29,27 @@
   "devDependencies": {
     "concurrently": "^9.1.2",
     "nodemon": "^3.1.9"
-  }
+  },
+"imports": {
+  "#routes/auth.routes.mjs": "./src/backend/infraestructure/express/routes/auth.routes.mjs",
+  "#routes/tasks.routes.mjs": "./src/backend/infraestructure/express/routes/tasks.routes.mjs",
+
+  "#controllers/auth.controller.mjs": "./src/backend/interfaces/controllers/auth.controller.mjs",
+  "#controllers/task.controller.mjs": "./src/backend/interfaces/controllers/task.controller.mjs",
+
+  "#middlewares/auth.middleware.mjs": "./src/backend/infraestructure/express/middlewares/auth.middleware.mjs",
+
+  "#models/user.model.mjs": "./src/backend/infraestructure/db/user.model.mjs",
+  "#models/task.model.mjs": "./src/backend/infraestructure/db/task.model.mjs",
+
+  "#schemas/user.schema.mjs": "./src/backend/shared/schemas/user.schema.mjs",
+  "#schemas/task.schema.mjs": "./src/backend/shared/schemas/task.schema.mjs",
+
+  "#lib/jwt.mjs": "./src/backend/shared/lib/jwt.mjs",
+  
+  "#usecases/user.usecase.mjs": "./src/backend/domain/auth/user-cases/user.usecase.mjs",
+
+  "#config/config.mjs": "./src/backend/config.mjs"
+}
+
 }

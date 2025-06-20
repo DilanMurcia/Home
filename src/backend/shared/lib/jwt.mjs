@@ -1,4 +1,4 @@
-import { TOKEN_SECRET } from "../../config.mjs";
+import { TOKEN_SECRET } from "#config/config.mjs";
 import jwt from "jsonwebtoken";
 
 export async function createAccessToken(payload) {

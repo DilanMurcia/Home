@@ -3,8 +3,8 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import cookieParser from "cookie-parser";
-import authRoutes from "./infraestructure/express/routes/auth.routes.mjs";
-import taksRoutes from "./infraestructure/express/routes/tasks.routes.mjs";
+import authRoutes from "#routes/auth.routes.mjs";
+import taksRoutes from "#routes/tasks.routes.mjs";
 
 const app = express();
 

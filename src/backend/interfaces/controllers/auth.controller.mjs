@@ -1,13 +1,13 @@
-import User from '../../../backend/infraestructure/db/user.model.mjs';
+import User from '#models/user.model.mjs';
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import { TOKEN_SECRET } from "../../config.mjs";
-import { createAccessToken } from "../../shared/lib/jwt.mjs";
+import { TOKEN_SECRET } from "#config/config.mjs";
+import { createAccessToken } from "#lib/jwt.mjs";
 
 
 
 export const register = async (req, res) => {
-  try {
+  try { 
     const { username, email, password } = req.body;
 
     const userFound = await User.findOne({ email });
