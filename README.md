@@ -52,6 +52,12 @@ cd home
 pnpm install
 ```
 
+⚠️ Requiere tener pnpm instalado. Si no lo tienes:
+
+```bash
+npm install -g pnpm
+```
+
 ### 3. Configurar variables de entorno
 
 ```bash
@@ -65,6 +71,12 @@ JWT_SECRET=clave_secreta_super_segura
 ```bash
 pnpm run dev
 ```
+
+Esto iniciará:
+
+🔌 Backend en http://localhost:3000
+
+🌐 Frontend Astro en http://localhost:4321
 
 ### 5. 👨‍💻 Autor
 
