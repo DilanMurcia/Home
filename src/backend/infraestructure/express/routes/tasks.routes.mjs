@@ -5,10 +5,10 @@
   getTask,
   getTasks,
   updateTask,
-} from '../../../../backend/interfaces/controllers/task.controller.mjs';
-  import { auth } from "../middlewares/auth.middleware.mjs";
-  import { validateSchema } from "../middlewares/validator.middleware.mjs";
-  import { createTaskSchema } from "../../../../backend/shared/schemas/task.schema.mjs";
+} from '#controllers/task.controller.mjs';
+  import { auth } from "#middlewares/auth.middleware.mjs";
+  import { validateSchema } from "#middlewares/validator.middleware.mjs";
+  import { createTaskSchema } from "#schemas/task.schema.mjs";
 
   const router = Router();
 

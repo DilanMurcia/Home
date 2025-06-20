@@ -38,12 +38,13 @@
   "#controllers/task.controller.mjs": "./src/backend/interfaces/controllers/task.controller.mjs",
 
   "#middlewares/auth.middleware.mjs": "./src/backend/infraestructure/express/middlewares/auth.middleware.mjs",
-
+  "#middlewares/validator.middleware.mjs": "./src/backend/infraestructure/express/middlewares/validator.middleware.mjs",
+  
   "#models/user.model.mjs": "./src/backend/infraestructure/db/user.model.mjs",
   "#models/task.model.mjs": "./src/backend/infraestructure/db/task.model.mjs",
 
-  "#schemas/user.schema.mjs": "./src/backend/shared/schemas/user.schema.mjs",
   "#schemas/task.schema.mjs": "./src/backend/shared/schemas/task.schema.mjs",
+  "#schemas/auth.schema.mjs": "./src/backend/shared/schemas/auth.schema.mjs",
 
   "#lib/jwt.mjs": "./src/backend/shared/lib/jwt.mjs",
   

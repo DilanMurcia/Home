@@ -4,9 +4,9 @@ import {
   logout,
   register,
   verifyToken,
-} from '../../../../backend/interfaces/controllers/auth.controller.mjs';
-import { validateSchema } from "../middlewares/validator.middleware.mjs";
-import { loginSchema, registerSchema } from "../../../../backend/shared/schemas/auth.schema.mjs";
+} from '#controllers/auth.controller.mjs';
+import { validateSchema } from "#middlewares/validator.middleware.mjs";
+import { loginSchema, registerSchema } from "#schemas/auth.schema.mjs";
 
 const router = Router();
 

@@ -23,6 +23,7 @@ export const register = async (req, res) => {
     // creating the user
     const newUser = new User({
       username,
+      email,
       password: passwordHash,
     });
 
